@@ -1,0 +1,22 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: cornflowerblue;
+    color: #fff;
+    display: flex;
+    padding: 15px;
+    max-width: 100%;
+}
+
+header ul{
+    display: flex;
+    background-color: red;
+}
+
+header ul li{
+    list-style: none;
+}
