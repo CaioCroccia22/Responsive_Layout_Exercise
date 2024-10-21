@@ -212,3 +212,9 @@ header ul li a{
 }
 
 
+.product-card button:hover{
+    background-color: rgb(61, 122, 235);
+    transform: translate(0,-10%);
+    opacity: 0.9;
+}
+
