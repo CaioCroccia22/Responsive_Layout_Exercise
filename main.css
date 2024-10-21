@@ -7,7 +7,7 @@
 
 
 header {
-    background-color: cornflowerblue;
+    background-color: rgb(28, 97, 224);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,10 @@ header {
     padding: 15px;
     width: 100%; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+header h1{
+    font-size: 32px;
 }
 
 header ul{
@@ -27,7 +31,7 @@ header ul{
 
 header ul li{
     list-style: none;
-    font-size: 20px;
+    
 }
 
 header ul li a{
@@ -35,6 +39,7 @@ header ul li a{
     color: #fff;
     font-style: bold;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .main-content {
@@ -50,6 +55,10 @@ header ul li a{
     align-items:start;
 }
 
+.about p{
+    font-size: 18px;
+}
+
 .about-text{
     margin: 0;
     padding: 10px;
@@ -58,9 +67,9 @@ header ul li a{
 .about-text h2,
 .products h2{
     margin-bottom: 30px;
-    border-bottom: solid 2px cornflowerblue;
+    border-bottom: solid 2px rgb(28, 97, 224);
     padding: 10px;
-    color: cornflowerblue;
+    color: rgb(28, 97, 224);
 }
 
 .products{
@@ -92,7 +101,7 @@ header ul li a{
 }
 
 .btn-item{
-    background-color: cornflowerblue;
+    background-color: rgb(28, 97, 224);
     padding: 10px;
     color: #fff;
     cursor: pointer;
@@ -109,6 +118,23 @@ header ul li a{
         width: 100%;        
         max-width: 100%;     
     }
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items:start;
+    }
+
+    .about p{
+        font-size: 18px;
+    }
+
+    .about img{
+        width: 500px;
+        height: 50vh;
+        margin: 0px 130px 0px 130px;
+    }
+
     .products-card-container{
         display: grid;
         grid-template-columns: repeat(2,49%);
@@ -124,4 +150,65 @@ header ul li a{
     }
 
 }
+
+@media screen and (max-width: 640px){
+    header h1{
+        font-size: 30px;
+        width: 200px;
+        text-align: center;
+    }
+
+    header ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul li a{
+        font-size: 22px;
+    }
+
+
+    .products-card-container{
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items:start;
+    }
+
+    .about p{
+        font-size: 18px;
+    }
+
+    .about img{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .product-card{
+        width: 90%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .product-card img,
+    .product-card p,
+    .product-card button{
+        width: 70%;
+    }
+
+    .product-card h3{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    
+
+}
+
 
